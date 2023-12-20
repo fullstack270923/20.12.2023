@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homework solution</title>
+</head>
+
+<body>
+    <script>
+
+        // 1.
+        const arr55 = new Array(100).fill(55)
+        console.log(arr55);
+
+        // 2.
+        const arr_len = parseInt(prompt('Enter array length:'))
+        const value = parseInt(prompt('Enter value:'))
+        const arr_dynmaic = new Array(arr_len).fill(value)
+        console.log(arr_dynmaic);
+
+        //3.
+        const student_in_class = parseInt(prompt('How many students?'))
+        const grades = new Array(student_in_class).fill(0)
+        for (let i = 0; i < grades.length; i++) {
+            grades[ i ] = parseInt(prompt('Enter grade for student array #' + i))
+        }
+        let sum = 0
+        for (let i = 0; i < grades.length; i++) {
+            sum = sum + grades[ i ]
+        }        
+        const avg = sum / grades.length
+        document.write('avg = ' + avg + '<br />')
+        let above_avg = 0
+        let under_avg = 0
+        for (let i = 0; i < grades.length; i++) {
+            if (grades[ i ] > avg) {
+                above_avg++
+            }
+            else if (grades[ i ] < avg) {
+                under_avg++
+            }
+        }        
+        document.write('above avg = ' + above_avg + '<br />')
+        document.write('under avg = ' + under_avg + '<br />')
+
+        for (let i = 0; i < grades.length; i++) {
+            document.write(' ' + grades[ i ] + ' ')
+            if (grades[ i ] < 50) {
+                document.write('Weak')
+            }
+            else if (grades[ i ] >= 50 && grades[ i ] <= 69) {
+                document.write('Average')
+            }
+            else if (grades[ i ] >= 70 && grades[ i ] <= 89) {
+                document.write('Good')
+            }            
+            else if (grades[ i ] >= 90) {
+                document.write('Excellent')
+            }                 
+            document.write('<br />')       
+        }  
+
+    </script>
+</body>
+
+</html>
