@@ -7,14 +7,17 @@
 
 <body>
 
-    <img id="my_card" src="images/J_of_hearts.png" alt="my card" width="" />
+    <img id="my_card" src="" alt="my card" width="200" height="300" />
     <hr />
-    <img id="comp_card" src="images/J_of_hearts.png" alt="comp card" />
-
+    <img id="comp_card" src="" alt="comp card" width="200" height="300" />
+    number: <input type="number" id = "id1">
     <script>
+
         // get a number from the user
         const my_card = parseInt(prompt("What's your card?"))
-        // 2-10: document.write (the number)
+
+        // get a number from the user
+        const computer_card = parseInt(prompt("What's the computer card?"))
 
         switch (my_card) {
             case 2:
@@ -25,19 +28,18 @@
             case 7:
             case 8:
             case 9:
-            case 10: document.write(my_card + '_of_hearts.png')
+            case 10: document.getElementById('my_card').src = 'images/' + my_card + '_of_hearts.png'
                 break;
-            case 11:document.write('J_of_hearts.png')
+            case 11: document.getElementById('my_card').src = 'images/J_of_hearts.png'
                 break;
-            case 12:document.write('Q_of_hearts.png')
+            case 12: document.getElementById('my_card').src = 'images/Q_of_hearts.png'
                 break;
-            case 13:document.write('K_of_hearts.png')
+            case 13: document.getElementById('my_card').src = 'images/K_of_hearts.png'
                 break;
-            case 14:document.write('A_of_hearts.png')
+            case 14: document.getElementById('my_card').src = 'images/A_of_hearts.png'
                 break;
-            case 15:document.write('JOKER.png')
+            case 15: document.getElementById('my_card').src = 'images/JOKER.png'
                 break;
-
         }
         document.write('<br />')
     </script>
