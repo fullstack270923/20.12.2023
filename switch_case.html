@@ -46,7 +46,7 @@
                 document.write('Sunday ')
                 break;
             case 1:
-                document.write('Monday ')
+                document.write('one')
                 break;
             case 2:
                 document.write('Tuesday ')
@@ -71,9 +71,72 @@
         // if the user input 1 -- document.write('one')
         // if the user input 2 -- document.write('two')
         // if the user input 3 -- document.write('three')
-        //    ...
-        // if the number is not between 1-10 document.write('bad number')
-        // use switch-case
+        const number = parseInt(prompt('Enter number: '))
+        switch (number) {
+            case 0:
+                document.write('Zero ')
+                break;
+            case 1:
+                document.write('One')
+                break;
+            case 2:
+                document.write('Two ')
+                break;
+            case 3:
+                document.write('Three ')
+                break
+            case 4:
+                document.write('Four ')
+                break;
+            case 5:
+                document.write('Five ')
+                break;
+            case 6:
+                document.write('Six ')
+                break;
+            case 7:
+                document.write('Seven ')
+                break;
+            case 8:
+                document.write('Eight ')
+                break;
+            case 9:
+                document.write('Nine ')
+                break;
+            case 10:
+                document.write('Ten ')
+                break;
+            default:
+                document.write('Bad number ')
+        }
+        document.write('<br />')
+
+        // input number from the user 1-10
+        const number_zugi = parseInt(prompt('Enter number Zugi/E-Zugi 1-10: '))
+        switch (number_zugi) {
+            case 2:
+            case 4:
+            case 6:
+            case 8:
+            case 10:document.write(number_zugi + ' is Zugi')
+                    break;
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 9:document.write(number_zugi + ' is E-Zugi')
+                    break;                
+            default:
+                document.write('not in range of 1-10')
+        }
+
+        // get a number from the user
+        // 2-10: document.write (the number)
+        // 11: document.write ( 'J' )
+        // 12: document.write ( 'Q' )
+        // 13: document.write ( 'K' )
+        // 14: document.write ( 'A' )
+        // 15: document.write ( 'JOKER' )
 
         document.write('<br />')
     </script>
