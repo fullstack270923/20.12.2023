@@ -73,7 +73,18 @@
         // if my card is bigger document.write -- win GREEN
         // if computer card is bigger document.write -- lose RED
         // if computer card equals to mine document.write -- draw PINK
-        document.write('<h1 style="color:green">WIN</h1>')
+        if (my_card > computer_card)
+            document.write('<h1 style="color:green">=== WIN ===</h1>')
+        else if (my_card < computer_card)
+            document.write('<h1 style="color:red">=== LOSE ===</h1>')
+        else  {
+            document.write('<h1 style="color:pink">=== DRAW ===</h1>')
+        }
+
+        // reloads the page every 3 seconds
+        //setTimeout(() => {
+            //location.reload()
+        //}, 3000)
     </script>
 </body>
 
