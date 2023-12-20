@@ -28,20 +28,20 @@
         for (let i = 0; i < grades.length; i++) {
             sum = sum + grades[ i ]
         }        
-        const avg = sum / grades.length
+        const avg_of_grades = sum / grades.length
         document.write('avg = ' + avg + '<br />')
-        let above_avg = 0
-        let under_avg = 0
+        let above_avg_count = 0
+        let under_avg_count = 0
         for (let i = 0; i < grades.length; i++) {
             if (grades[ i ] > avg) {
-                above_avg++
+                above_avg_count++
             }
             else if (grades[ i ] < avg) {
-                under_avg++
+                under_avg_count++
             }
         }        
-        document.write('above avg = ' + above_avg + '<br />')
-        document.write('under avg = ' + under_avg + '<br />')
+        document.write('above avg = ' + above_avg_count + '<br />')
+        document.write('under avg = ' + under_avg_count + '<br />')
 
         for (let i = 0; i < grades.length; i++) {
             document.write(' ' + grades[ i ] + ' ')
