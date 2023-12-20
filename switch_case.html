@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Switch case</title>
+</head>
+
+<body>
+    <script>
+
+        const days = ["Sunday", "Monday", "Tuesday", "Wedsnesday", "Thursday", "Friday", "Saturday"]
+
+        let current_day = (new Date()).getDay() // get current day
+        //document.write(days[ current_day ])
+
+        if (current_day == 0) {
+            document.write('Sunday ')
+        }
+        else if (current_day == 1) {
+            document.write('Monday ')
+        }
+        else if (current_day == 2) {
+            document.write('Tuesday ')
+        }
+        else if (current_day == 3) {
+            document.write('Wedsnesday ')
+        }
+        else if (current_day == 4) {
+            document.write('Thursday ')
+        }
+        else if (current_day == 5) {
+            document.write('Friday ')
+        }
+        else if (current_day == 6) {
+            document.write('Saturday ')
+        }
+        else {
+            document.write('Invalid day ')
+        }
+        document.write('<br />')
+
+        // Switch case
+        document.write('Switch case <br />')
+        switch (current_day) {
+            case 0:
+                document.write('Sunday ')
+                break;
+            case 1:
+                document.write('Monday ')
+                break;
+            case 2:
+                document.write('Tuesday ')
+                break;
+            case 3:
+                document.write('Wedsnesday ')
+                break
+            case 4:
+                document.write('Thursday ')
+                break;
+            case 5:
+                document.write('Friday ')
+                break;
+            case 6:
+                document.write('Saturday ')
+                break;
+            default:
+                document.write('Invalid day ')
+        }
+
+        // input number from the user 1-10
+        // if the user input 1 -- document.write('one')
+        // if the user input 2 -- document.write('two')
+        // if the user input 3 -- document.write('three')
+        //    ...
+        // if the number is not between 1-10 document.write('bad number')
+        // use switch-case
+
+        document.write('<br />')
+    </script>
+</body>
+
+</html>
